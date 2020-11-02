@@ -23,7 +23,7 @@ public class DoorKeyOpening : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && DoorkDistance && )
+        if (Input.GetKeyDown(KeyCode.E) && DoorkDistance)
         {
             Destroy(this.gameObject);
         }
