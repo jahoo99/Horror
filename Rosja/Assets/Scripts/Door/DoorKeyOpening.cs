@@ -5,25 +5,25 @@ using UnityEngine;
 public class DoorKeyOpening : MonoBehaviour
 {
 
-    private bool KeyOwning = false;
-    private bool DoorkDistance = false;
+    [HideInInspector]public bool keyOwning = false;
+    private bool _doorDistance = false;
     private void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<PlayerMovement>())
         {
-            DoorkDistance = true;
+            _doorDistance = true;
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.GetComponent<PlayerMovement>())
         {
-            DoorkDistance = false;
+            _doorDistance = false;
         }
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && DoorkDistance)
+        if (Input.GetKeyDown(KeyCode.E) && _doorDistance && keyOwning)
         {
             Destroy(this.gameObject);
         }
