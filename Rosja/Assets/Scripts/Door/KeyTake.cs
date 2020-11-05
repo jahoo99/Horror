@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KeyTake : MonoBehaviour
 {
-    [SerializeField]private GameObject _keyToDoors;
+    [SerializeField]private DoorKeyOpening _keyToDoors;
     private bool DoorkKey = false;
     private void OnTriggerEnter(Collider other)
     {
@@ -24,7 +24,7 @@ public class KeyTake : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E)&& DoorkKey)
         {
-
+            _keyToDoors.keyOwning = true;
             Destroy(this.gameObject);
         }
     }

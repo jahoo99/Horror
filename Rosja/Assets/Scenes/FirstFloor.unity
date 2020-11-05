@@ -27143,18 +27143,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7121648980531353641, guid: d0f3f87c248f18c449b3faaf80fa8354, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7908277236f75a74a8b68dcec1e8c5d7, type: 2}
-    - target: {fileID: 7121648980531353643, guid: d0f3f87c248f18c449b3faaf80fa8354, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7121648980531353643, guid: d0f3f87c248f18c449b3faaf80fa8354, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.31
-      objectReference: {fileID: 0}
     - target: {fileID: 7121648981373548140, guid: d0f3f87c248f18c449b3faaf80fa8354, type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.33
@@ -27199,17 +27187,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7121648981373548141, guid: d0f3f87c248f18c449b3faaf80fa8354, type: 3}
-      propertyPath: _speed
-      value: 9.59
-      objectReference: {fileID: 0}
     - target: {fileID: 7121648981373548143, guid: d0f3f87c248f18c449b3faaf80fa8354, type: 3}
       propertyPath: m_Name
       value: FirstPersonPlayer
       objectReference: {fileID: 0}
-    - target: {fileID: 7121648982179525447, guid: d0f3f87c248f18c449b3faaf80fa8354, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7908277236f75a74a8b68dcec1e8c5d7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0f3f87c248f18c449b3faaf80fa8354, type: 3}
