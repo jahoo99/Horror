@@ -23,20 +23,26 @@ public class LevelManager : MonoBehaviour
        
     }   
     
-    private int menu = 0;
-    private int lvl = 1;
+    private int _menu = 0;
+    private int _lvl = 1;
+    private int _test = 2;
 
-
+    
     public void FirstLevel()
     {
-        SceneManager.LoadScene(lvl, LoadSceneMode.Single); ; //zmienić na indeksy
+        SceneManager.LoadScene(_lvl, LoadSceneMode.Single); ;
+    }
+    public void Test()
+    {
+        SceneManager.LoadScene(_test, LoadSceneMode.Single); ; 
     }
     public void MainMenu()
     {
-        SceneManager.LoadScene(menu, LoadSceneMode.Single);
+        SceneManager.LoadScene(_menu, LoadSceneMode.Single);
     }
     public void QuitGame()
     {
         Application.Quit();
     }
+    public static bool gameIsPaused;
 }
